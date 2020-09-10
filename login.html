@@ -21,14 +21,17 @@
         <div class="login-box">
             <form class="layui-form login-form">
                 <div class="layui-form-item">
-                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <i class="layui-icon">&#xe66f;</i>
+                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input" id="username">
                 </div>
                 <div class="layui-form-item">
-                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <i class="layui-icon">&#xe673;</i>
+                    <input type="password" name="password" required lay-verify="required|password" placeholder="请输入密码" autocomplete="off" class="layui-input" id="userpwd">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>登录</button>
                 </div>
+                <!-- 切换到注册页面按钮 -->
                 <div class="layui-form-item" style="text-align: right;">
                     <a href="javascript:;" id="link_reg">去注册</a>
                 </div>
@@ -38,17 +41,21 @@
         <div class="reg-box">
             <form class="layui-form login-form">
                 <div class="layui-form-item">
-                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                    <i class="layui-icon">&#xe66f;</i>
+                    <input type="text" name="username" required lay-verify="required|username" placeholder="请输入用户名" autocomplete="off" class="layui-input" id="iptname">
                 </div>
                 <div class="layui-form-item">
-                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                    <i class="layui-icon">&#xe673;</i>
+                    <input type="password" name="password" required lay-verify="required|password" placeholder="请输入密码" autocomplete="off" class="layui-input" id="iptpwd">
                 </div>
                 <div class="layui-form-item">
-                    <input type="password" name="password" required lay-verify="required" placeholder="请确认输入密码" autocomplete="off" class="layui-input">
+                    <i class="layui-icon">&#xe673;</i>
+                    <input type="password" name="repassword" required lay-verify="required|password|repassword" placeholder="请确认输入密码" autocomplete="off" class="layui-input">
                 </div>
                 <div class="layui-form-item">
-                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit>注册</button>
                 </div>
+                <!-- 切换到登录页面按钮 -->
                 <div class="layui-form-item " style="text-align: right;">
                     <a href="javascript:;" id="link_login">去登陆</a>
                 </div>
@@ -56,6 +63,8 @@
         </div>
     </div>
     <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/js/bassAPI.js"></script>
     <script src="/assets/js/login.js"></script>
 </body>
 
