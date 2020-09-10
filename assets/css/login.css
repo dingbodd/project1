@@ -22,3 +22,12 @@ html {
     height: 60px;
     background: url(/assets/images/login_title.png) no-repeat center;
 }
+
+.reg-box {
+    display: none;
+    padding: 0 30px;
+}
+
+.login-box {
+    padding: 0px 30px;
+}

@@ -10,12 +10,53 @@
 </head>
 
 <body>
+    <!-- logo区域 -->
     <div class="layui-main">
         <img src="/assets/images/logo.png" alt="">
     </div>
+    <!-- 内容区域 -->
     <div class="loginbox">
         <div class="title"></div>
+        <!-- 登录区域 -->
+        <div class="login-box">
+            <form class="layui-form login-form">
+                <div class="layui-form-item">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+                <div class="layui-form-item" style="text-align: right;">
+                    <a href="javascript:;" id="link_reg">去注册</a>
+                </div>
+            </form>
+        </div>
+        <!-- 注册区域 -->
+        <div class="reg-box">
+            <form class="layui-form login-form">
+                <div class="layui-form-item">
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <input type="password" name="password" required lay-verify="required" placeholder="请确认输入密码" autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="formDemo">立即提交</button>
+                </div>
+                <div class="layui-form-item " style="text-align: right;">
+                    <a href="javascript:;" id="link_login">去登陆</a>
+                </div>
+            </form>
+        </div>
     </div>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/login.js"></script>
 </body>
 
 </html>
