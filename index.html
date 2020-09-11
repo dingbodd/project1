@@ -20,18 +20,19 @@
 
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
-                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img"> 个人中心
+                    <a href="javascript:;" class="top">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span class="touxiang">A</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">更换头像</a></dd>
-                        <dd><a href="">重置密码</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_avatar.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/user_pwd.html" target="fm">重置密码</a></dd>
 
                     </dl>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="">
+                    <a href="javascript:;" id="logOut">
                         <span class="iconfont icon-tuichu"></span> 退出
                     </a>
                 </li>
@@ -41,8 +42,10 @@
         <div class="layui-side layui-bg-black">
             <div class="layui-side-scroll">
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
-                <div>
-                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img"> 个人中心
+                <div id="welcome">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <span class="touxiang">A</span>
+                    <span id="welcomeFont">欢迎 xxx</span>
                 </div>
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all" lay-filter="test">
                     <li class="layui-nav-item layui-this">
@@ -65,9 +68,12 @@
                             <span class="iconfont icon-user"></span> 个人中心
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon">&#xe653;</i> 基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon">&#xe653;</i> 更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon">&#xe653;</i> 重置密码</a></dd>
+                            <dd><a href="/user/user_info.html" target="fm"><i class="layui-icon">&#xe653;</i> 基本资料</a>
+                            </dd>
+                            <dd><a href="/user/user_avatar.html" target="fm"><i class="layui-icon">&#xe653;</i> 更换头像</a>
+                            </dd>
+                            <dd><a href="/user/user_pwd.html" target="fm"><i class="layui-icon">&#xe653;</i> 重置密码</a>
+                            </dd>
                         </dl>
                     </li>
                 </ul>
@@ -81,10 +87,15 @@
 
         <div class="layui-footer">
             <!-- 底部固定区域 -->
-            <span> 1522352494@qq.com</span>
+            <span><a
+                    href="https://mail.qq.com/cgi-bin/frame_html?sid=Bmjt2JlWCLXvRx1C&r=de537f7fa314c55cc83d13be6860fcab">
+                    1522352494@qq.com</a></span>
         </div>
     </div>
     <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/bassAPI.js"></script>
+    <script src="/assets/js/index.js"></script>
 
 </body>
 

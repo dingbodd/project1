@@ -16,3 +16,27 @@ iframe {
     height: 100%;
     overflow: hidden;
 }
+#welcome{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.top{
+    text-align: center; 
+}
+.touxiang{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #009688;
+    border-radius: 50%;
+    position: relative;
+    top: 4px;
+    font-size: 20px;
+    margin-right: 5px;
+}
+.layui-nav-img{
+    height: 40px;
+    width: 40px;
+}
